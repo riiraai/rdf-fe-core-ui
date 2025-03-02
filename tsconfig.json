@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+		"esModuleInterop": true,
+		"types": ["@testing-library/jest-dom"]
+	}
+}
