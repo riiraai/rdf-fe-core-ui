@@ -1,3 +1,11 @@
+echo "🔍 Checking for secrets in staged files..."
+npm run detect-secrets:staged
+if [ $? -ne 0 ]; then
+  echo "❌ Secrets found in staged files. Please remove them before committing."
+  exit 1
+fi
+echo "✅ No secrets found"
+
 echo "🔍 Running linting..."
 npm run lint:fix && \
 echo "✅ Linting completed"

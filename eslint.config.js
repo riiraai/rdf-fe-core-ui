@@ -14,7 +14,7 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-	...compat.plugins("prettier"),
+	...compat.plugins("prettier", "react"),
 	...compat.extends("prettier"),
 	...compat.config({
 		rules: {
