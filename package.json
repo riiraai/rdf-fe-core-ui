@@ -9,7 +9,9 @@
 		"lint:fix": "eslint --fix",
 		"format": "prettier . --write",
 		"test": "jest --passWithNoTests",
-		"test:watch": "jest --watch"
+		"test:watch": "jest --watch",
+		"detect-secrets": "secret-finder",
+		"detect-secrets:staged": "secret-finder --staged"
 	},
 	"keywords": [],
 	"author": "",
@@ -47,6 +49,7 @@
 		"jest-environment-jsdom": "^29.7.0",
 		"prettier": "^3.5.2",
 		"prettier-plugin-tailwindcss": "^0.6.11",
+		"secret-finder": "^1.0.2",
 		"ts-jest": "^29.2.6",
 		"ts-node": "^10.9.2",
 		"typescript-eslint": "^8.25.0"
